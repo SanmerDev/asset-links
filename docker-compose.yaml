@@ -1,0 +1,9 @@
+name: asset-links
+services:
+  asset-links:
+    image: asset-links
+    restart: always
+    ports:
+      - 80:8080
+    volumes:
+      - ./asset.json:/etc/asset-links/asset.json
